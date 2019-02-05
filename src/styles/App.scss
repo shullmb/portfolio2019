@@ -1,16 +1,27 @@
+$mainBGColor: #0e1a24;
+$panelBGColor: #e4e4e4;
+$maintextColor: #222;
+
 body {
   margin: 0;
   padding: 0;
-  background: #222;
+  background: $mainBGColor;
+  color: $maintextColor;
   min-width: 100vw;
   min-height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 header, nav, main {
-  background-color: #efefef;
+  background-color: $panelBGColor;
 }
 
-header {grid-area: header;}
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  padding: 2em;
+}
 
 nav {
   grid-area: nav;
@@ -24,14 +35,20 @@ main {
   padding: 2em;
 }
 
-footer {grid-area: footer;}
+footer {
+  color: #555;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #App {
   display: grid;
   min-height: 100vh;
   margin: 0.5em;
   grid-gap: 0.5em;
-  grid-template-rows: 15em 1fr 4em;
+  grid-template-rows: 6em 1fr 3em;
   grid-template-columns: 15em 1fr;
   grid-template-areas: "nav    header" 
                        "nav    main" 
