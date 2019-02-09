@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './img/mbshull_logo.png';
+import ProjectContainer from './components/ProjectContainer';
 
 class App extends Component {
   render() {
@@ -18,11 +19,12 @@ class App extends Component {
           </ul>
         </nav>
         <main>
-          <p>
+          {/* <p>
             main content goes here
-          </p>
+          </p> */}
+          <ProjectContainer />
         </main>
-        <footer> this is the footer</footer>
+        <footer> created with love and react | &copy; {new Date().getFullYear()} mbshull </footer>
       </div>
     );
   }

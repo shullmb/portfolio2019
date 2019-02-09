@@ -1,0 +1,23 @@
+#ProjectContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "menu viewport"
+}
+
+
+#ProjectMenu {
+  grid-area: menu;
+  border-right: .5em solid $mainBGColor;
+  // width: 20%;
+  // height: 100%;
+}
+
+#ProjectViewport {
+  grid-area: viewport;
+  padding: 1em;
+  // height: 100%;
+  // width: 80%;
+}
