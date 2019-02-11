@@ -18,7 +18,7 @@
   {
     "title": "mbshull.com",
     "tech": ["React","SASS"],
-    "summary": "This portfolio was created with love and React. Please submit all complaints regarding the design in writing to shullmb@gmail.com",
+    "summary": "This portfolio was created with love and React. Please submit all complaints regarding the design in writing to me@mbshull.com",
     "img":"portfolio_thumb.gif",
     "gh": "https://github.com/shullmb/portfolio",
     "live": "http://www.mbshull.com"
@@ -34,7 +34,7 @@
   {
     "title": "Pangram Ipsum",
     "tech": ["React"],
-    "summary": "A Saturday afternoon project inspired by a tweet about Lorem Ipsum scaring away a squarespace user. I decided to see how quickly I could get a Pangram Ipsum generator deployed.",
+    "summary": "A Saturday afternoon project inspired by a tweet about Lorem Ipsum scaring away a squarespace user. I decided to see how quickly I could get a Pangram Ipsum generator deployed. Result: ~2 hours from conception to v1.",
     "img":"pg_ipsum_thumb.gif",
     "gh": "https://github.com/shullmb/pg_ipsum",
     "live": "http://www.mbshull.com/pangram"

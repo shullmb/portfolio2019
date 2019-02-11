@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import logo from './img/mbshull_logo.png';
 import ProjectContainer from './components/ProjectContainer';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import Header from './Header';
+
+library.add(fab)
 
 class App extends Component {
   render() {
     return (
       <div id='App'>
-        <header>
-          <h1>Michael Shull | Full Stack Web Development</h1>
-        </header>
+        <Header />
         <nav>
           <img src={logo} alt="mbshull.com" />
           <ul>
