@@ -15,6 +15,13 @@
   // height: 100%;
 }
 
+#ProjectMenu span {
+  background: red;
+  padding: .25em;
+  margin: .5em .25em;
+  color: white;
+}
+
 #ProjectViewport {
   grid-area: viewport;
   padding: 1em;

@@ -10,7 +10,7 @@ const ProjectContainer = props => {
   
   return (
     <div id="ProjectContainer">
-      <ProjectMenu projects={projects} handleClick={setCurrentView} />
+      <ProjectMenu projects={projects} selectProject={setCurrentView} setProjects={setProjects}/>
       <ProjectViewport currentView={currentView} />
     </div>
   )
