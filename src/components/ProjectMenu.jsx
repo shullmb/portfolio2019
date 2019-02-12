@@ -7,32 +7,20 @@ const ProjectMenu = ({projects, selectProject, filterProjects, resetFilter, tech
     <div id="ProjectMenu">
       <p>
         <BadgeButton value="Reset" onClick={resetFilter} /> 
-        {
-          Object.keys(techUsed).map( tech => (
+        {Object.keys(techUsed).map( tech => (
             <BadgeButton value={tech}
                          num={techUsed[tech]}
                          key={tech} 
                          onClick={() => filterProjects(tech)}
-            
-              />
-            // <button key={tech}
-            //   onClick = { () => {
-            //     filterProjects(tech)
-            //   }}> 
-            //   {tech} 
-            // </button>
-          ))
-        }
+                         />
+          ))}
       </p>
       <ul>
-        {
-          projects.map( project => (
+        {projects.map( project => (
             <li key={project.title} onClick={ () => selectProject(project)}>
               {project.title}
             </li>
-          ))
-        }
-
+          ))}
       </ul>
     </div>
 

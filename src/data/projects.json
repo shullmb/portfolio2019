@@ -40,6 +40,14 @@
     "live": "http://www.mbshull.com/pangram"
   },
   {
+    "title": "Color Swatch Library",
+    "tech": ["React", "Node","Express","MongoDB", "SASS"],
+    "summary": "Programmatically created Swatch library with Tints and Shades.",
+    "img":"hh-challenge_thumb.gif",
+    "gh": "https://github.com/shullmb/hh-challenge",
+    "live": "https://mbs-helpful-challenge.herokuapp.com/"
+  },
+  {
     "title": "Optiplot",
     "tech": ["MongoDB","Express","React","Node", "SASS"],
     "summary": "A full stack application to plan your garden. Optiplot aims to help optimize your background garden space by helping you group compatible plants together while optimizing your use of space",
