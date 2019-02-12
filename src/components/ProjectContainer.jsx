@@ -34,7 +34,7 @@ const ProjectContainer = props => {
                    filterProjects={filterProjects}
                    resetFilter={resetFilter}
                    />
-      <ProjectViewport currentView={currentView} />
+      <ProjectViewport currentView={currentView} setCurrentView={setCurrentView}/>
     </div>
   )
 }

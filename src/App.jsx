@@ -5,6 +5,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import Header from './Header';
+import Footer from './Footer';
 
 library.add(fab)
 
@@ -28,7 +29,7 @@ class App extends Component {
           </p> */}
           <ProjectContainer />
         </main>
-        <footer> created with love and react | &copy; {new Date().getFullYear()} mbshull </footer>
+        <Footer />
       </div>
     );
   }
