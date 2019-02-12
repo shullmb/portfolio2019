@@ -1,23 +1,26 @@
 import React from 'react';
-import projectsData from '../data/projects';
-
+import {BadgeButton} from './BadgeButton';
 
 const ProjectMenu = ({projects, selectProject, filterProjects, resetFilter, techUsed}) => {
 
   return (
     <div id="ProjectMenu">
       <p>
-        <button onClick = {resetFilter}> 
-          Reset
-        </button>
+        <BadgeButton value="Reset" onClick={resetFilter} /> 
         {
           Object.keys(techUsed).map( tech => (
-            <button key={tech}
-              onClick = { () => {
-                filterProjects(tech)
-              }}> 
-              {tech} 
-            </button>
+            <BadgeButton value={tech}
+                         num={techUsed[tech]}
+                         key={tech} 
+                         onClick={() => filterProjects(tech)}
+            
+              />
+            // <button key={tech}
+            //   onClick = { () => {
+            //     filterProjects(tech)
+            //   }}> 
+            //   {tech} 
+            // </button>
           ))
         }
       </p>
