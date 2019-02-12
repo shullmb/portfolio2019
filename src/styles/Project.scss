@@ -13,14 +13,19 @@
   border-right: .5em solid $mainBGColor;
   // width: 20%;
   // height: 100%;
+  button {
+    background: darkslategray;
+    border: 2px solid rgba(255,255,255,0.2);
+    padding: 1em;
+    margin: .5em .25em;
+    color: white;
+    box-sizing: border-box;
+    &:hover {
+      border: white 2px solid;
+    }
+  }
 }
 
-#ProjectMenu span {
-  background: red;
-  padding: .25em;
-  margin: .5em .25em;
-  color: white;
-}
 
 #ProjectViewport {
   grid-area: viewport;

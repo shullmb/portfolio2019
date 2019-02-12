@@ -2,24 +2,28 @@ import React from 'react';
 import projectsData from '../data/projects';
 
 
-const ProjectMenu = ({projects, setProjects, selectProject}) => {
-  const techSkills = projects.reduce((result, project) => {
-    project.tech.forEach( skill => {
-      result[skill] = result[skill] ? result[skill] + 1 : 1;
-    })
-    return result
-  }, {})
-
+const ProjectMenu = ({projects, setProjects, selectProject, filterProjects, techSkills}) => {
 
   return (
     <div id="ProjectMenu">
       <p>
-        <span onClick = {() => setProjects(projectsData)}> reset Filter </span>
-        {Object.keys(techSkills).map( skill => (
-          <span key={skill}
-            onClick = { () => setProjects( projects.filter( project => project.tech.includes(skill)))}
-          > {skill} {techSkills[skill]} </span>
-        ))}
+        <button onClick = {() => {
+            setProjects(projectsData)
+            selectProject(projectsData)
+          }
+        }> 
+          Reset
+        </button>
+        {
+          Object.keys(techSkills).map( skill => (
+            <button key={skill}
+              onClick = { () => {
+                filterProjects(skill)
+              }}> 
+              {skill} 
+            </button>
+          ))
+        }
       </p>
       <ul>
         {
