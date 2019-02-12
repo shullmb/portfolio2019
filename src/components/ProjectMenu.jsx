@@ -2,25 +2,21 @@ import React from 'react';
 import projectsData from '../data/projects';
 
 
-const ProjectMenu = ({projects, setProjects, selectProject, filterProjects, techSkills}) => {
+const ProjectMenu = ({projects, selectProject, filterProjects, resetFilter, techUsed}) => {
 
   return (
     <div id="ProjectMenu">
       <p>
-        <button onClick = {() => {
-            setProjects(projectsData)
-            selectProject(projectsData)
-          }
-        }> 
+        <button onClick = {resetFilter}> 
           Reset
         </button>
         {
-          Object.keys(techSkills).map( skill => (
-            <button key={skill}
+          Object.keys(techUsed).map( tech => (
+            <button key={tech}
               onClick = { () => {
-                filterProjects(skill)
+                filterProjects(tech)
               }}> 
-              {skill} 
+              {tech} 
             </button>
           ))
         }

@@ -8,26 +8,31 @@ const ProjectContainer = props => {
   const [projects, setProjects] = useState(projectsData);
   const [currentView, setCurrentView] = useState(projects)
 
-  const techSkills = projects.reduce((result, project) => {
-      project.tech.forEach(skill => {
-        result[skill] = result[skill] ? result[skill] + 1 : 1;
+  const techUsed = projects.reduce((used, project) => {
+      project.tech.forEach(tech => {
+        used[tech] = used[tech] ? used[tech] + 1 : 1;
       })
-      return result
+      return used
     }, {})
   
-  const filterProjects = (skill) => {
-    let filtered = projects.filter(project => project.tech.includes(skill))
+  const filterProjects = tech => {
+    let filtered = projects.filter(project => project.tech.includes(tech))
     setProjects(filtered)
     setCurrentView(filtered)
+  }
+
+  const resetFilter = () => {
+    setProjects(projectsData)
+    setCurrentView(projectsData)
   }
   
   return (
     <div id="ProjectContainer">
       <ProjectMenu projects={projects} 
-                   techSkills={techSkills}
+                   techUsed={techUsed}
                    selectProject={setCurrentView}
-                   setProjects={setProjects} 
                    filterProjects={filterProjects}
+                   resetFilter={resetFilter}
                    />
       <ProjectViewport currentView={currentView} />
     </div>
