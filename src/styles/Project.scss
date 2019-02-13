@@ -34,8 +34,13 @@
 #ProjectViewport {
   grid-area: viewport;
   padding: 1em;
-  // height: 100%;
-  // width: 80%;
+ }
+
+.tech {
+  padding: 1em;
+  margin: .5em .25em;
+  color: #efefef;
+  box-sizing: border-box;
 }
 
 @keyframes wiggle {
