@@ -2,12 +2,13 @@ import React from 'react';
 import {BadgeButton} from './BadgeButton';
 
 const ProjectMenu = ({projects, selectProject, filterProjects, resetFilter, techUsed}) => {
+  const sortedTech = Object.keys(techUsed).sort((a, b) => techUsed[b] - techUsed[a])
 
   return (
     <div id="ProjectMenu">
       <p>
         <BadgeButton value="Reset" onClick={resetFilter} /> 
-        {Object.keys(techUsed).map( tech => (
+        { sortedTech.map( tech => (
             <BadgeButton value={tech}
                          num={techUsed[tech]}
                          key={tech} 

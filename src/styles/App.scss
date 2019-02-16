@@ -1,14 +1,18 @@
 // $mainBGColor: #0e1a24;
-$mainBGColor:linear-gradient(135deg, rgba(47, 79, 79,1), rgba(123,99,111,1) 100%);
+$pink: rgba(238, 174, 202,1);
+// $mainBGColor:linear-gradient(135deg, rgba(47, 79, 79,1), rgba(123,99,111,1) 100%);
+$mainBGColor:linear-gradient(135deg, rgba(47, 79, 79,1), $pink 100%);
 // $mainBGColor:linear-gradient(135deg, rgba(47,79,79,1) 0%, rgba(253,187,45,1) 100%);
-$panelBGColor: rgba(228, 228, 228,0.5);
+$panelBGColor: rgba(228, 228, 228,0.6);
 $maintextColor: #222;
+// $ks: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
+$ks: linear-gradient(135deg, rgb(48, 145, 172) 0%, rgb(88, 149, 94) 100%);
 
 body {
   margin: 0;
   padding: 0;
   background: rgb(34,193,195);
-  background: $mainBGColor;
+  background: $ks;
   color: $maintextColor;
   min-width: 100vw;
   min-height: 100vh;
@@ -17,7 +21,7 @@ body {
 
 header, nav, main {
   background-color: $panelBGColor;
-  box-shadow: 5px 5px 5px rgba(29,49,49,0.5);
+  box-shadow: 5px 5px 5px rgba(29, 49, 49, 0.3);
 }
 
 header {

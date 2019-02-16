@@ -5,11 +5,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 library.add(faHeart)
 
-const iconClr = 'rgba(228, 228, 228,0.8)'
-
 const Footer = () => {
   return (
-    <footer> created with &nbsp; <FontAwesomeIcon icon={faHeart} color={iconClr} title='LOVE' /> &nbsp; &amp;&amp; &nbsp; <FontAwesomeIcon icon={['fab', 'react']} color={iconClr} title="REACT" /> &nbsp; | &copy;{new Date().getFullYear()} mbshull </footer>
+    <footer> <small>mbshull.com | made with <FontAwesomeIcon icon={faHeart} title='LOVE' /> and <FontAwesomeIcon icon={['fab', 'react']} title="REACT" /> | &copy;{new Date().getFullYear()} Michael Shull </small></footer>
   )
 }
 
