@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from './img/mbshull_logo.png';
-import { BadgeButton } from './components/BadgeButton';
+import NavItem from './components/NavItem';
 
 const NavPanel = props => {
   const [navLinks, setNavLinks] = useState(['~','Projects','Skills', 'Resume', 'About'])
@@ -9,11 +9,7 @@ const NavPanel = props => {
     <nav>
       <img src={logo} alt="mbshull.com" />
       {
-        navLinks.map( (navLink,i) => (
-          <div class="navItem">
-            <BadgeButton value={navLink} key={i} />
-          </div> 
-        ))
+        navLinks.map( (navLink,i) => <NavItem key={i} title={navLink} /> )
       }
     </nav>
   )
