@@ -4,7 +4,7 @@ $pink: rgba(238, 174, 202,1);
 $mainBGColor:linear-gradient(135deg, rgba(47, 79, 79,1), $pink 100%);
 // $mainBGColor:linear-gradient(135deg, rgba(47,79,79,1) 0%, rgba(253,187,45,1) 100%);
 $panelBGColor: rgba(228, 228, 228,0.6);
-$maintextColor: #222;
+$mainTextColor: #222;
 // $ks: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%);
 $ks: linear-gradient(135deg, rgb(48, 145, 172) 0%, rgb(88, 149, 94) 100%);
 
@@ -13,7 +13,7 @@ body {
   padding: 0;
   background: rgb(34,193,195);
   background: $ks;
-  color: $maintextColor;
+  color: $mainTextColor;
   min-width: 100vw;
   min-height: 100vh;
   font-family: Helvetica, Arial, sans-serif;

@@ -5,7 +5,10 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './Header';
 import NavPanel from './NavPanel';
+import Home from './components/Home';
 import ProjectContainer from './components/ProjectContainer';
+import SkillContainer from './components/SkillContainer';
+import AboutContainer from './components/AboutContainer';
 import Footer from './Footer';
 
 library.add(fab)
@@ -19,8 +22,10 @@ class App extends Component {
         <NavPanel />
         <main>
             <Switch>
-              <Route exact path='/'  />
-              <Route exact path='/projects' component={ProjectContainer}  />
+              <Route exact path='/' component={Home} />
+              <Route exact path='/projects' component={ProjectContainer} />
+              <Route exact path='/skills' component={SkillContainer} />
+              <Route exact path='/about' component={AboutContainer} />
             </Switch>
         </main>
         <Footer />
