@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './Header';
 import NavPanel from './NavPanel';
@@ -11,7 +12,7 @@ import SkillContainer from './components/SkillContainer';
 import AboutContainer from './components/AboutContainer';
 import Footer from './Footer';
 
-library.add(fab)
+library.add(fab, faExternalLinkAlt)
 
 class App extends Component {
   render() {

@@ -12,7 +12,8 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(34,193,195);
-  background: $ks;
+  background: $mainBGColor;
+  // background: $ks;
   color: $mainTextColor;
   min-width: 100vw;
   min-height: 100vh;

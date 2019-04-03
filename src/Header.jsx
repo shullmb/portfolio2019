@@ -5,8 +5,8 @@ const iconClr = '#222';
 
 const Header = () => (
   <header>
-    <h1>Michael Shull | Full Stack Web Development</h1>
-    <div>
+    <h1>Michael Shull | Full Stack Web Development </h1>
+    <div id="Social">
       <a href="https://github.com/shullmb" rel="noreferrer noopener" target="_blank">
         <FontAwesomeIcon icon={['fab', 'github']} color={iconClr} size='2x' />
       </a>

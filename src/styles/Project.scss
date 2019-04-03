@@ -22,7 +22,7 @@
     color: $mainTextColor;
     box-sizing: border-box;
     &:hover {
-      animation: wiggle 500ms;
+      animation: wiggle 300ms;
     };
     &:active{
       background: rgba(47, 79, 79,0.5);
